@@ -29,20 +29,19 @@ console.log(chkName("Ken"))
 { 
 // Part_3
 const names = ["Maria","Antony","Joy","Juan"]
-const chkName = ["Joy","Antony","Tom"]
+const newName = ["Joy","Antony","Tom"]
 const matchName = []
 let x = names.length
 
-function chkNames(chk) {
-    for (count = 0; count < x; count++) {
-        if (chkName.find(element => element == chk[count])) {
-            matchName.push(names[count])
+function chkNames() {
+    for (i = 0; i < x; i++) {
+        if (names.find(element => element == newName[i])) {
+            matchName.push(newName[i])
         }
     }
-console.log(matchName)
-    
+	console.log(matchName)
 }
-chkNames(names)
+chkNames()
 }
 
 { 
@@ -52,13 +51,11 @@ const names = ["Maria","Antony","Joy","Juan"]
 const lengthAns = []
 let x = names.length
 
-function nameLength(chk) {
-	for (count = 0; count < x; count++) {
-		lengthAns.push(names[count].length)
+const nameLength = () => {
+	for (i = 0; i < x; i++) {
+		lengthAns.push(names[i].length)
 		}
-
 	console.log(lengthAns)
-	
 }
-nameLength(names)
+nameLength()
 }
